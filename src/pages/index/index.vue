@@ -1,6 +1,7 @@
 <template>
   <view class="content" @click="dome">
     {{ title }}
+    <u-button text="月落"></u-button>
   </view>
 </template>
 
@@ -9,7 +10,7 @@
 const title = ref('Hello22')
 
 function dome() {
-console.log(123);
+  console.log(123)
 
   uni.scanCode({
     success: function (res) {
